@@ -18,7 +18,7 @@ BOOL Start;
     IBOutlet UILabel *Intro2;
     IBOutlet UILabel *Intro3;
     
-    IBOutlet UILabel *Heli;
+    IBOutlet UIImageView *Heli;
     
     NSTimer *timer;
 
