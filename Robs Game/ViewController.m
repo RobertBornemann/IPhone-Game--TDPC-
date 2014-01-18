@@ -118,10 +118,11 @@
     Intro1.hidden = NO;
     Intro2.hidden = NO;
     Intro3.hidden = NO;
+    Daftpunk.hidden = NO;
     
     Heli.hidden = NO;
     Heli.center = CGPointMake(57, 116);
-    Heli.image = [UIImage imageNamed:@"HELI_DOWN.png"];
+    Heli.image = [UIImage imageNamed:@"Daft-Punk-Thomas-Off-icon.png"];
     
     Start = YES;
     
@@ -225,6 +226,7 @@
         Intro1.hidden = YES;
         Intro2.hidden = YES;
         Intro3.hidden = YES;
+        Daftpunk.hidden = YES;
         
         timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(HeliMove) userInfo:nil repeats:YES];
         
@@ -297,14 +299,14 @@
     }
     
     Y = -7;
-    Heli.image = [UIImage imageNamed:@"HELI_UP.png"];
+    Heli.image = [UIImage imageNamed:@"Daft-Punk-Thomas-Off-icon.png"];
 
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     
     Y = 7;
-    Heli.image = [UIImage imageNamed:@"HELI_DOWN.png"];
+    Heli.image = [UIImage imageNamed:@"Daft-Punk-Thomas-Off-icon.png"];
 }
 
 

@@ -20,6 +20,7 @@ int HighScore;
     IBOutlet UILabel *Intro1;
     IBOutlet UILabel *Intro2;
     IBOutlet UILabel *Intro3;
+    IBOutlet UIImageView *Daftpunk;
     
     IBOutlet UIImageView *Heli;
     
