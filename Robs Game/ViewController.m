@@ -14,7 +14,128 @@
 
 @implementation ViewController
 
+
+-(void)Collision{
+    
+    if (CGRectIntersectsRect(Heli.frame, Obstacle.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Obstacle2.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Bottom1.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Bottom2.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Bottom3.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Bottom4.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Bottom5.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Bottom6.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Bottom7.frame)) {
+        [self EndGame];
+    }
+    
+    
+    if (CGRectIntersectsRect(Heli.frame, Top1.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Top2.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Top3.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Top4.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Top5.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Top6.frame)) {
+        [self EndGame];
+    }
+    if (CGRectIntersectsRect(Heli.frame, Top7.frame)) {
+        [self EndGame];
+    }
+    
+    
+    if ( Heli.center.y > 273) {
+        [self EndGame];
+    }
+    
+    if ( Heli.center.y < 48) {
+        [self EndGame];
+    }
+}
+
+
+-(void)EndGame{
+    
+    if (ScoreNumber > HighScore) {
+        HighScore = ScoreNumber;
+        [[NSUserDefaults standardUserDefaults] setInteger:HighScore forKey:@"HighScoreSaved"];
+    }
+    Heli.hidden = YES;
+    [timer invalidate];
+    
+    [Scorer invalidate];
+    
+    [self performSelector:@selector(NewGame) withObject: nil afterDelay:5];
+
+    }
+
+
+-(void)NewGame{
+    Bottom1.hidden = YES;
+    Bottom2.hidden = YES;
+    Bottom3.hidden = YES;
+    Bottom4.hidden = YES;
+    Bottom5.hidden = YES;
+    Bottom6.hidden = YES;
+    Bottom7.hidden = YES;
+    
+    Top1.hidden = YES;
+    Top2.hidden = YES;
+    Top3.hidden = YES;
+    Top4.hidden = YES;
+    Top5.hidden = YES;
+    Top6.hidden = YES;
+    Top7.hidden = YES;
+    
+    Obstacle.hidden = YES;
+    Obstacle2.hidden = YES;
+    
+    Intro1.hidden = NO;
+    Intro2.hidden = NO;
+    Intro3.hidden = NO;
+    
+    Heli.hidden = NO;
+    Heli.center = CGPointMake(57, 116);
+    Heli.image = [UIImage imageNamed:@"HELI_DOWN.png"];
+    
+    Start = YES;
+    
+    ScoreNumber = 0;
+    Score.text = [NSString stringWithFormat:@"Score: 0"];
+    Intro3.text = [NSString stringWithFormat:@"High Score: %i", HighScore];
+    
+
+    }
+
 -(void)HeliMove{
+    
+    [self Collision];
+
     Heli.center = CGPointMake(Heli.center.x, Heli.center.y + Y);
     
     Obstacle.center = CGPointMake(Obstacle.center.x -10, Obstacle.center.y);
@@ -93,6 +214,11 @@
     
 }
 
+-(void)Scoring{
+    ScoreNumber = ScoreNumber +1;
+    Score.text = [NSString stringWithFormat:@"Score: %i", ScoreNumber];
+    }
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 
     if (Start == YES){
@@ -101,6 +227,8 @@
         Intro3.hidden = YES;
         
         timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(HeliMove) userInfo:nil repeats:YES];
+        
+        Scorer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(Scoring) userInfo:nil repeats:YES];
         
         Start = NO;
         
@@ -200,6 +328,9 @@
     
     Obstacle.hidden = YES;
     Obstacle2.hidden = YES;
+    
+    HighScore = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
+    Intro3.text = [NSString stringWithFormat: @"High Score: %i", HighScore];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.

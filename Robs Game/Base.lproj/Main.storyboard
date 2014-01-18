@@ -42,7 +42,7 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HELI_DOWN.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tev-PG-nue">
-                                <rect key="frame" x="46" y="112" width="95" height="82"/>
+                                <rect key="frame" x="67" y="131" width="47" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="968889_613482758695957_1944775838_t.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ub7-EQ-KiP">
@@ -109,6 +109,13 @@
                                 <rect key="frame" x="20" y="0.0" width="89" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="274" translatesAutoresizingMaskIntoConstraints="NO" id="gfY-LL-spX">
+                                <rect key="frame" x="206" y="299" width="274" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -129,6 +136,7 @@
                         <outlet property="Intro3" destination="Cxx-gJ-ZNb" id="eCw-NG-yNi"/>
                         <outlet property="Obstacle" destination="Ub7-EQ-KiP" id="Q0S-XG-Igo"/>
                         <outlet property="Obstacle2" destination="Q36-mC-PWb" id="ZlK-ur-eLg"/>
+                        <outlet property="Score" destination="gfY-LL-spX" id="No7-fs-f40"/>
                         <outlet property="Top1" destination="3hD-Kx-639" id="k7n-cG-pFS"/>
                         <outlet property="Top2" destination="CCo-bh-jqd" id="ldY-UT-cbm"/>
                         <outlet property="Top3" destination="TWg-Yb-4lr" id="krd-Hp-IbO"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2D6D7E188AB2C300E12BF4 /* Daft Punk - Get Lucky 8 Bit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E2D6D7D188AB2C300E12BF4 /* Daft Punk - Get Lucky 8 Bit.mp3 */; };
+		2E2D6D80188AB44400E12BF4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2D6D7F188AB44400E12BF4 /* AVFoundation.framework */; };
 		2E8377B118896D29002ECE37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8377B018896D28002ECE37 /* Foundation.framework */; };
 		2E8377B318896D29002ECE37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8377B218896D29002ECE37 /* CoreGraphics.framework */; };
 		2E8377B518896D29002ECE37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8377B418896D29002ECE37 /* UIKit.framework */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E2D6D7D188AB2C300E12BF4 /* Daft Punk - Get Lucky 8 Bit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Daft Punk - Get Lucky 8 Bit.mp3"; sourceTree = "<group>"; };
+		2E2D6D7F188AB44400E12BF4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2E8377AD18896D28002ECE37 /* Robs Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Robs Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8377B018896D28002ECE37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2E8377B218896D29002ECE37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2D6D80188AB44400E12BF4 /* AVFoundation.framework in Frameworks */,
 				2E8377B318896D29002ECE37 /* CoreGraphics.framework in Frameworks */,
 				2E8377B518896D29002ECE37 /* UIKit.framework in Frameworks */,
 				2E8377B118896D29002ECE37 /* Foundation.framework in Frameworks */,
@@ -113,6 +118,7 @@
 		2E8377AF18896D28002ECE37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E2D6D7F188AB44400E12BF4 /* AVFoundation.framework */,
 				2E8377B018896D28002ECE37 /* Foundation.framework */,
 				2E8377B218896D29002ECE37 /* CoreGraphics.framework */,
 				2E8377B418896D29002ECE37 /* UIKit.framework */,
@@ -138,6 +144,7 @@
 		2E8377B718896D29002ECE37 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2E2D6D7D188AB2C300E12BF4 /* Daft Punk - Get Lucky 8 Bit.mp3 */,
 				2E8377ED18899850002ECE37 /* HELI_DOWN.png */,
 				2E8377EE18899850002ECE37 /* HELI_UP.png */,
 				2E8377E518896DE2002ECE37 /* 968889_613482758695957_1944775838_t.png */,
@@ -248,6 +255,7 @@
 			files = (
 				2E8377E918896DE2002ECE37 /* 968889_613482758695957_1944775838_t.png in Resources */,
 				2E8377F018899850002ECE37 /* HELI_UP.png in Resources */,
+				2E2D6D7E188AB2C300E12BF4 /* Daft Punk - Get Lucky 8 Bit.mp3 in Resources */,
 				2E8377EF18899850002ECE37 /* HELI_DOWN.png in Resources */,
 				2E8377C918896D29002ECE37 /* Images.xcassets in Resources */,
 				2E8377EA18896DE2002ECE37 /* 969117_613482742029292_1256699407_n.png in Resources */,
@@ -484,6 +492,7 @@
 				2E8377E118896D29002ECE37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E8377E218896D29002ECE37 /* Build configuration list for PBXNativeTarget "Robs GameTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +501,7 @@
 				2E8377E418896D29002ECE37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

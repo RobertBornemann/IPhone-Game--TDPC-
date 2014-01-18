@@ -12,6 +12,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSString *music = [[NSBundle mainBundle]pathForResource:@"Daft Punk - Get Lucky 8 Bit" ofType:@"mp3"];
+    audioPlayer1 = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:music] error:NULL];
+    audioPlayer1.delegate = self;
+    audioPlayer1.numberOfLoops = -1;
+    [audioPlayer1 play];
+    
+    
+    
+    
+    
     // Override point for customization after application launch.
     return YES;
 }
