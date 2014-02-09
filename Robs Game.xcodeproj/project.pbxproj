@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E2D6D7E188AB2C300E12BF4 /* Daft Punk - Get Lucky 8 Bit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2E2D6D7D188AB2C300E12BF4 /* Daft Punk - Get Lucky 8 Bit.mp3 */; };
 		2E2D6D80188AB44400E12BF4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2D6D7F188AB44400E12BF4 /* AVFoundation.framework */; };
 		2E2D6D82188ACA6400E12BF4 /* Daft-Punk-Thomas-Off-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E2D6D81188ACA6400E12BF4 /* Daft-Punk-Thomas-Off-icon.png */; };
 		2E2D6D84188ACB9600E12BF4 /* Space Stars iPhone Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E2D6D83188ACB9600E12BF4 /* Space Stars iPhone Wallpaper.jpg */; };
@@ -43,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E2D6D7D188AB2C300E12BF4 /* Daft Punk - Get Lucky 8 Bit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Daft Punk - Get Lucky 8 Bit.mp3"; sourceTree = "<group>"; };
 		2E2D6D7F188AB44400E12BF4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2E2D6D81188ACA6400E12BF4 /* Daft-Punk-Thomas-Off-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Daft-Punk-Thomas-Off-icon.png"; sourceTree = "<group>"; };
 		2E2D6D83188ACB9600E12BF4 /* Space Stars iPhone Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Space Stars iPhone Wallpaper.jpg"; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 				2E2D6D85188ACC5C00E12BF4 /* wall2.jpg */,
 				2E2D6D83188ACB9600E12BF4 /* Space Stars iPhone Wallpaper.jpg */,
 				2E2D6D81188ACA6400E12BF4 /* Daft-Punk-Thomas-Off-icon.png */,
-				2E2D6D7D188AB2C300E12BF4 /* Daft Punk - Get Lucky 8 Bit.mp3 */,
 				2E8377B818896D29002ECE37 /* Robs Game-Info.plist */,
 				2E8377B918896D29002ECE37 /* InfoPlist.strings */,
 				2E8377BC18896D29002ECE37 /* main.m */,
@@ -258,7 +255,6 @@
 			files = (
 				2E2D6D8C188ACE9900E12BF4 /* Explosion.png in Resources */,
 				2E2D6D84188ACB9600E12BF4 /* Space Stars iPhone Wallpaper.jpg in Resources */,
-				2E2D6D7E188AB2C300E12BF4 /* Daft Punk - Get Lucky 8 Bit.mp3 in Resources */,
 				2E8377C918896D29002ECE37 /* Images.xcassets in Resources */,
 				2E2D6D8A188ACD9A00E12BF4 /* meteor1.png in Resources */,
 				2E8377BB18896D29002ECE37 /* InfoPlist.strings in Resources */,
